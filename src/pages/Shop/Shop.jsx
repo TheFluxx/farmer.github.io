@@ -16,13 +16,19 @@ function Shop() {
     }, [dispatch, telegram_id]);
 
     const lvl = useSelector((state) => state.coin.multitap);
-    const multitapPrice = useSelector((state) => state.coin.multitapPrice);
-    const energyPrice = useSelector((state) => state.coin.energyPrice);
+    const energyLevel = useSelector((state) => state.coin.energyLevel);
     const currentId = useSelector((state) => state.coin.currentActive);
     const localId = useSelector((state) => state.coin.localId);
     const autofarm = useSelector((state) => state.coin.autofarm);
     const currentSkin = useSelector((state) => state.coin.current_skin);
     const skins = useSelector((state) => state.coin.skins);
+
+    const calculatePrice = (basePrice, level) => {
+        return basePrice * Math.pow(2.5, level);
+    };
+
+    const multitapPrice = calculatePrice(1000, lvl);
+    const energyPrice = calculatePrice(1000, (energyLevel - 6500) / 500);
 
     const [multitap, setMultitap] = useState(format(multitapPrice.toString()));
     const [energy, setEnergy] = useState(format(energyPrice.toString()));
@@ -34,7 +40,7 @@ function Shop() {
 
     const nextLvl = () => {
         tg.HapticFeedback.impactOccurred('heavy');
-        dispatch(buyMultitap({ telegram_id, multitapPrice }));
+        dispatch(buyMultitap({ telegram_id, price: multitapPrice }));
     };
 
     const upgradeEnergy = () => {
@@ -51,8 +57,6 @@ function Shop() {
         tg.HapticFeedback.notificationOccurred('success');
         await dispatch(changeSkin({ telegram_id, skin }));
         await dispatch(fetchUserPoints(telegram_id));
-
-        // dispatch(editActive(e.currentTarget.parentNode.getAttribute('id')));
     };
 
     useEffect(() => {
