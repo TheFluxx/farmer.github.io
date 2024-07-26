@@ -1,0 +1,210 @@
+.profile {
+    padding-top: 7.63vw;
+    position: relative;
+    z-index: 9;
+}
+
+.profile_info {
+    padding-top: 3.31vw;
+    padding-bottom: 5.60vw;
+    display: flex;
+    gap: 4.33vw;
+}
+
+.profile_big_img {
+    width: 23.66vw;
+    height: 23.66vw;
+}
+
+.profile_name {
+    font-family: 'pixel-r';
+    font-size: 4.07vw;
+    font-weight: 400;
+    line-height: 7.12vw;
+    text-align: left;
+    color: #fff;
+}
+
+.profile_username {
+    font-family: 'vietnam-r';
+    font-size: 4.07vw;
+    font-weight: 400;
+    color: #9E9EB8;
+    text-align: left;
+    margin-bottom: 4.33vw;
+}
+
+.profile_id {
+    margin-bottom: 0;
+    font-size: 3.82vw;
+    font-style: italic;
+}
+
+.profile_referal {
+    margin-top: 4.83vw;
+    margin-bottom: 10vw;
+}
+
+.referal_header {
+    font-family: 'pixel-r';
+    font-weight: 400;
+    font-size: 3.05vw;
+    color: #FFFFFF;
+}
+
+.referal_block {
+    width: 100%;
+    padding: 9.16vw 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 7.12vw;
+    background-color: #1b1d1f;
+    margin-top: 3.56vw;
+    margin-bottom: 6.36vw;
+}
+
+.referal_block span {
+    font-family: 'pixel-r';
+    font-size: 5.09vw;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.referal_blocks {
+    display: grid;
+    grid-template-columns: 1fr 23px 1fr;
+    grid-template-rows: 20.36vw;
+    gap: 5px;
+    align-items: center;
+}
+
+.referal_mini {
+    background: #373B3E80;
+    box-shadow: 0px 0px 4px 0px #E8E22E75 inset;
+    border: 1px solid #E8E22E2B;
+    border-radius: 7vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.referal_txt {
+    font-family: 'vietnam-r';
+    font-size: 2.80vw;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+.referal_money {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.money_txt {
+    font-family: 'pixel-r';
+    font-size: 2.54vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+.profile_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.big_link_btn {
+    padding: 0 20px;
+    background: #E8E22E;
+    box-shadow: 0px 0px 9.8px 0px #FDFF846E;
+    border-radius: 4vw;
+}
+
+.big_link_btn span {
+    font-family: 'vietnam-r';
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+}
+
+.small_link_btn {
+    border: 1px solid #E8E22E80;
+    border-radius: 50%;
+    height: 7.63vw;
+    width: 7.63vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invite_friend_btn {
+    background: #E8E22E;
+    padding: 10px 20px;
+    border-radius: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 20px auto;
+    /* Center horizontally */
+    font-family: 'vietnam-r';
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    box-shadow: 0px 0px 9.8px 0px #FDFF846E;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 2vw;
+    /* Add margin-top to make it more visible */
+}
+
+.invite_friend_btn:hover {
+    background: #fff200;
+    color: #000;
+}
+
+.coming_soon_btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 20px;
+    background-color: #FFD700;
+    /* Золотой цвет */
+    color: #000;
+    /* Черный цвет текста */
+    font-size: 18px;
+    /* Размер текста */
+    font-weight: bold;
+    /* Полужирный текст */
+    text-align: center;
+    /* Центрирование текста */
+    border: none;
+    /* Убрать границу */
+    border-radius: 5px;
+    /* Скругленные углы */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Тень */
+    cursor: not-allowed;
+    /* Указатель мыши */
+    transition: background-color 0.3s;
+    /* Плавный переход */
+}
+
+.coming_soon_btn:hover {
+    background-color: #FFC700;
+    /* Более яркий золотой цвет при наведении */
+}
+
+.small-image {
+    width: 14px;
+    /* Укажите нужную ширину */
+    height: auto;
+    /* Автоматическая высота для сохранения пропорций */
+}

@@ -1,0 +1,38 @@
+.home {
+    padding-top: 8.76vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 20.36vw; */
+    gap: 2.54vw;
+    margin-bottom: 15.78vw;
+}
+
+.home_info_block {
+    border: 1px solid #484622;
+    background: #1A1C1D;
+    border-radius: 7.12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.27vw;
+    padding: 4.09vw 0;
+}
+
+
+.profile_img {
+    width: 10.18vw;
+    height: 10.18vw;
+    border-radius: 50%;
+}
+
+.profile_title {
+    font-family: 'inter-r';
+    font-size: 5.09vw;
+    font-weight: 600;
+    color: #fff;
+}

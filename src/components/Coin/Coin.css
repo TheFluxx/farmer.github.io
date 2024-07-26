@@ -1,0 +1,155 @@
+.coin {
+    display: flex;
+    flex-direction: column;
+    gap: 6.11vw;
+    align-items: center;
+    margin-bottom: 7.45vw;
+}
+
+.coin_count {
+    display: flex;
+    gap: 1.53vw;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.coin_mini {
+    width: 7.63vw;
+    height: 7.63vw;
+}
+
+.coin_txt {
+    color: #fff;
+    font-family: 'pixel-r';
+    font-size: 6.11vw;
+    font-weight: 400;
+}
+
+.coin_btn {
+    z-index: 9;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    margin-bottom: 18.83vw;
+}
+
+.coin_btn img {
+    width: 60.56vw;
+    transition: transform 0.2s ease;
+}
+
+.coin_btn:disabled img {
+    opacity: 0.5;
+}
+
+.coin_btn img:hover {
+    transform: scale(1.05);
+}
+
+.coin_band {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 2.29vw;
+    margin-top: -30px;
+    /* Поднять блок энергии на 20 пикселей */
+
+}
+
+.coin_band_num {
+    display: flex;
+    align-items: center;
+    gap: 2.29vw;
+    justify-content: center;
+}
+
+.coin_band_txt {
+    font-family: 'inter-r';
+    font-size: 3.56vw;
+    font-weight: 700;
+    color: #fff;
+}
+
+.coin_new_tap {
+    font-size: 7vw;
+    animation: coin_animation 1s ease-out forwards;
+    position: absolute;
+    color: #fff;
+    z-index: 20;
+}
+
+.coin_band_txt span {
+    color: #C5C5C5;
+    font-weight: 200;
+    font-size: 3.05vw;
+}
+
+.coin_band_cont {
+    width: 80.66vw;
+    display: flex;
+    border-radius: 4vw;
+}
+
+.coin_band_block {
+    background: linear-gradient(90deg, rgba(68, 68, 51, 0.8) 0%, #E8E22E 100%);
+    width: 80.66vw;
+    border-radius: 4vw;
+    height: 5.34vw;
+    justify-self: start;
+    z-index: 9;
+    align-self: baseline;
+    transition: width 0.3s ease;
+}
+
+@keyframes coin_animation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-125px);
+    }
+}
+
+.loading-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.loading-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-text {
+    font-family: 'pixel-r', sans-serif;
+    font-size: 2rem;
+    color: #FFD700;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}

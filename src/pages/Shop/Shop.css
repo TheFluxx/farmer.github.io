@@ -1,0 +1,177 @@
+.shop {
+    padding-top: 7.63vw;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 8.91vw;
+    justify-content: center;
+}
+
+.header_txt {
+    font-family: 'pixel-r';
+    color: #fff;
+    font-weight: 400;
+    font-size: 5.09vw;
+}
+
+.upgrade_block {
+    margin-top: 3.05vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3.05vw;
+}
+
+.upgrade_block h2,
+.skins_block h2 {
+    font-size: 4.07vw;
+}
+
+.upgrade_blocks {
+    display: grid;
+    /* grid-template-areas: "a b" "c c"; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 43.26vw;
+    z-index: 9;
+    gap: 4.33vw 2.54vw;
+}
+
+.upgrade_top {
+    background: #1B1D1F;
+    border-radius: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4.07vw;
+}
+
+.upgrade_header {
+    font-family: 'pixel-r';
+    font-size: 3.31vw;
+    font-weight: 400;
+    color: #fff;
+    line-height: 7.12vw;
+}
+
+.upgrade_lvl {
+    color: #9E9EB8;
+    font-family: 'inter-r';
+    font-size: 4.07vw;
+    font-weight: 400;
+    line-height: 5.09vw;
+}
+
+.upgrade_price_block {
+    display: flex;
+    gap: 2.02vw;
+    margin-top: 4.07vw;
+    margin-bottom: 5.09vw;
+    align-items: center;
+}
+
+.upgrade_txt {
+    color: #fff;
+    font-family: 'inter-r';
+    font-weight: 300;
+    font-size: 3.82vw;
+    line-height: 5.09vw;
+}
+
+.buy_btn {
+    width: 19.08vw;
+    height: 7.63vw;
+    box-shadow: 0px 0px 10.8px 0px #FFFA7D40;
+    background: #E8E22E;
+    border: none;
+    border-radius: 5vw;
+}
+
+.buy_btn span {
+    font-family: 'pixel-r';
+    font-weight: 400;
+    font-size: 3.31vw;
+}
+
+.upgrade_bottom {
+    width: 89.06vw;
+    height: 25.45vw;
+    background: #1B1D1F;
+    border-radius: 8vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    z-index: 9;
+    padding: 3.82vw;
+}
+
+.upgrade_sprite {
+    width: 17.81vw;
+    height: 17.81vw;
+    border-radius: 4vw;
+    border: 1px solid #E8E22E33;
+    box-shadow: 0px 0px 4px 0px #E8E22E inset;
+    background: #2f3235;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upgrade_autofarm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.upgrade_autofarm .upgrade_price_block {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.upgrade_bottom .buy_btn {
+    align-self: last baseline;
+}
+
+.skins_block {
+    margin-top: 4.83vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4.07vw;
+    z-index: 9;
+    margin-bottom: 21vw;
+}
+
+.swiper-wrapper {
+    display: flex;
+    position: relative;
+    width: 200vw;
+}
+
+.skin_block {
+    height: 33.59vw;
+}
+
+.select_btn {
+    width: 25.41vw;
+}
+
+.sprite {
+    width: 28.36vw;
+    height: 27.36vw;
+}
+
+.active_btn {
+    background: #414548 !important;
+    padding: 0 2vw;
+    box-shadow: 0px 0px 10.5px 0px #FFFA8040 !important;
+
+}
+
+.active_btn span {
+    color: #fff;
+}
+
+.disactive {
+    display: none;
+}
